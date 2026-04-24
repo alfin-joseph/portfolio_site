@@ -1,0 +1,55 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.heroContent {
+  max-width: 800px;
+}
+
+.greeting {
+  font-family: var(--font-mono);
+  color: var(--accent);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: clamp(3rem, 8vw, 5rem);
+  color: var(--text-primary);
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: var(--text-secondary);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.socialLink {
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+  transition: var(--transition-smooth);
+}
+
+.socialLink:hover {
+  color: var(--accent);
+  transform: translateY(-3px);
+}

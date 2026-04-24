@@ -1,0 +1,89 @@
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.projectCard {
+  border-radius: 12px;
+  padding: 2px; /* For the gradient border effect */
+  transition: var(--transition-smooth);
+}
+
+.projectCard:hover {
+  transform: translateY(-8px);
+}
+
+.cardInner {
+  background-color: var(--bg-color); /* Inner stays dark */
+  height: 100%;
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* If you want the full card to be colorful like the screenshot, use this instead:
+   We make the inner card transparent so the gradient shows through.
+*/
+.projectCard .cardInner {
+  background-color: transparent; 
+  color: #0b1121; /* Dark text for bright cards */
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.folder {
+  color: #0b1121;
+}
+
+.folder svg {
+  width: 50px;
+  height: 50px;
+}
+
+.projectLinks {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.projectLinks a {
+  color: #0b1121;
+  font-size: 1.2rem;
+}
+
+.projectLinks a:hover {
+  opacity: 0.7;
+}
+
+.projectTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0b1121;
+  font-weight: 700;
+}
+
+.projectDescription {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+  color: rgba(11, 17, 33, 0.85); /* Slightly lighter dark */
+}
+
+.projectTechList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: #0b1121;
+  font-weight: 600;
+}
