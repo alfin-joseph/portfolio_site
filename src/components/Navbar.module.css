@@ -45,3 +45,37 @@
 .navLinks a:hover {
   color: var(--accent);
 }
+
+.mobileMenuBtn {
+  display: none;
+  cursor: pointer;
+  z-index: 105;
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .mobileMenuBtn {
+    display: block;
+  }
+  
+  .navLinks {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    transition: var(--transition-smooth);
+    z-index: 104;
+    padding: 0;
+  }
+  
+  .navLinksOpen {
+    right: 0;
+  }
+}
