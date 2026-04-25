@@ -16,7 +16,7 @@ const experienceData = [
     ]
   },
   {
-    role: "Full-Stack Developer",
+    role: "Software Engineer and Solution Builder",
     company: "Missan IT Solutions",
     location: "Chennai",
     date: "October 2022 – March 2024",

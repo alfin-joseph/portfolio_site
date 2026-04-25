@@ -26,7 +26,7 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <p>
-              I am <span className="highlight">Alfin Joseph</span>, currently working as a Full Stack Developer.
+              I am <span className="highlight">Alfin Joseph</span>, currently working as a Software Engineer and Solution Builder.
             </p>
             <p>
               I love working on scalable web applications and my tech stack includes <span className="highlight">Python, Django, FastAPI, React, Next.js, PostgreSQL and MongoDB</span>. I am also familiar with AWS and Docker.
